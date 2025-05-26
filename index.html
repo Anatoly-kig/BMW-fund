@@ -1,44 +1,62 @@
-Фонд на БМВ <body style="background-image:
-              url('images/bg.jpg'); background-size:
-              cover; background-position: center;
-              background-repeat: no-repeat;">
-{ font-family: Arial, sans-serif; 
-background-color: #f4f4f4; 
-display: flex; 
-justify-content: center;
-align-items: center; 
-height: 100vh; 
-margin: 0;
-}
-.container {
-background: white;
-padding: 40px;
-border-radius: 20px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-text-align: center;
-max-width: 500px;
-}
-h1 {
-font-size: 28px;
-margin-bottom: 20px;
-}
-p {
-font-size: 18px;
-margin-bottom: 30px;
-}
-.btn {
-background-color: #000;
-color: #fff;
-padding: 15px 30px;
-border: none;
-border-radius: 10px;
-font-size: 16px;
-cursor: pointer;
-text-decoration: none;
-}
-.donations {
-margin-top: 30px;
-color: #555;
-font-size: 14px; 
-}
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Фонд на БМВ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://raw.githubusercontent.com/Anatoly-kig/BMW-fund/main/ki.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.9); /* немного прозрачный фон, чтобы текст было видно */
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #000;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .donations {
+      margin-top: 30px;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Помоги мне купить БМВ</h1>
+    <p>Каждый рубль приближает меня к мечте. Вместе мы сможем это сделать!</p>
+    <a href="#" class="btn">Поддержать</a>
+    <div class="donations">
+      Уже собрано: 0 ₽
+    </div>
+  </div>
+</body>
+</html>
