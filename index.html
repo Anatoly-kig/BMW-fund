@@ -1,80 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Фонд на БМВ</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-image: url('https://raw.githubusercontent.com/Anatoly-kig/BMW-fund/main/ki.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .container {
-      background: rgba(255, 255, 255, 0.9); /* немного прозрачный фон, чтобы текст было видно */
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      max-width: 500px;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    .btn {
-      background-color: #000;
-      color: #fff;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .donations {
-      margin-top: 30px;
-      color: #555;
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Fund</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .donate-button {
+            padding: 15px 30px;
+            background-color: #635bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .donate-button:hover {
+            background-color: #3f37c9;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Помоги мне купить БМВ</h1>
-    <p>Каждый рубль приближает меня к мечте. Вместе мы сможем это сделать!</p>
-    <a href="#" class="btn">Поддержать</a>
-    <div class="donations">
-      Уже собрано: 0 ₽
+
+    <!-- Основной контент -->
+    <div class="content">
+        <h1>Поддержите проект</h1>
+        <p>Ваши пожертвования помогут развивать проект.</p>
     </div>
-  </div>
+
+    <!-- Кнопка оплаты Stripe -->
+    <div class="payment-container">
+        <a href="https://buy.stripe.com/test_abc123..." target="_blank" class="donate-button">
+            Поддержать проект
+        </a>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2025 BMW Fund</p>
+    </footer>
+
+    <script src="https://js.stripe.com/v3/"></script>
 </body>
 </html>
-<a href="https://buy.stripe.com/test_abc123..." target="_blank" class="donate-button">
-  Поддержать проект
-</a>
-<style>
-  .donate-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #635bff;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-  }
-  .donate-button:hover {
-    background-color: #3f37c9;
-  }
-</style>
